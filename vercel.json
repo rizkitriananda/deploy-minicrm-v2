@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "regions": ["fra1"],
     "builds": [
         {
             "src": "api/index.php",
@@ -13,16 +14,22 @@
             }
         }
     ],
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.1"
+        }
+    },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        },
         {
             "src": "/build/(.*)",
             "dest": "/build/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ],
+    "outputDirectory": "public",
     "env": {
         "APP_NAME": "Laravel",
         "APP_ENV": "production",

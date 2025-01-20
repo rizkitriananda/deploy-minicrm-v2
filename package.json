@@ -25,5 +25,8 @@
         "react-icons": "^5.4.0",
         "react-toastify": "^11.0.2",
         "vercel-php": "^0.7.3"
+    },
+    "engines": {
+        "node": "18.x"
     }
 }
