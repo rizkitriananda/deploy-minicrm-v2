@@ -6,7 +6,7 @@
             "use": "vercel-php"
         },
         {
-            "src": "path/to/your/react/app/package.json",
+            "src": "resources/views/app.blade.php",
             "use": "@vercel/static-build",
             "config": {
                 "distDir": "build"
